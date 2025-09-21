@@ -9,8 +9,8 @@ body {
 }
 
 header {
-  background: #2a9d8f;
-  color: #ffffff;
+  background: #000000;
+  color: #black;
   padding: 1rem;
   border-radius: 6px;
   margin-bottom: 1rem;
@@ -48,5 +48,6 @@ a:hover {
   border-left: 4px solid #264653;
   padding-left: 0.75rem;
 }
+
 
 
