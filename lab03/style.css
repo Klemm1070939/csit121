@@ -1,6 +1,6 @@
 /* style.css - basic styling for lab03 */
 body {
-  background-color: #f4f7f9;
+  background-color: #FFA500;
   color: #222;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -48,3 +48,4 @@ a:hover {
   border-left: 4px solid #264653;
   padding-left: 0.75rem;
 }
+
