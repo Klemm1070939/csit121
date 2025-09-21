@@ -1,53 +1,71 @@
-/* style.css - basic styling for lab03 */
-body {
-  background-color: #FFA500;
-  color: orange;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 1rem;
-  line-height: 1.5;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step by Step Walkthrough</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: orange; /* Make all text orange */
+            line-height: 1.6;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: orange;
+        }
+        pre {
+            background-color: #333;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            color: orange; /* Code in orange */
+        }
+        code {
+            color: orange;
+        }
+        .step {
+            margin-bottom: 30px;
+            padding: 10px;
+            border-left: 4px solid orange;
+        }
+    </style>
+</head>
+<body>
 
-header {
-  background: #000000;
-  color: black;
-  padding: 1rem;
-  border-radius: 6px;
-  margin-bottom: 1rem;
-}
+    <h1>Step by Step Walkthrough</h1>
 
-h1, h2, h3 {
-  margin: 0 0 0.5rem 0;
-}
+    <div class="step">
+        <h2>Step 1: Create the HTML file</h2>
+        <p>Open your code editor and create a new file called <code>index.html</code>.</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;/html&gt;</code></pre>
+    </div>
 
-/* paragraph styles */
-p {
-  margin: 0 0 1rem 0;
-}
+    <div class="step">
+        <h2>Step 2: Add a header</h2>
+        <p>Inside the <code>&lt;body&gt;</code> tag, add a header for your page.</p>
+        <pre><code>&lt;body&gt;
+    &lt;h1&gt;Welcome to My Page&lt;/h1&gt;
+&lt;/body&gt;</code></pre>
+    </div>
 
-/* link styling */
-a {
-  color: #e76f51;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
+    <div class="step">
+        <h2>Step 3: Add a paragraph</h2>
+        <p>Include a paragraph to describe your page.</p>
+        <pre><code>&lt;p&gt;This is a simple webpage walkthrough.&lt;/p&gt;</code></pre>
+    </div>
 
-/* class selector required */
-.post {
-  background: #ffffff;
-  border-radius: 6px;
-  padding: 1rem;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.06);
-  margin-bottom: 1rem;
-}
+    <div class="step">
+        <h2>Step 4: Save and open in browser</h2>
+        <p>Save your <code>index.html</code> file and open it in your browser to see the orange text!</p>
+    </div>
 
-/* id selector required (an example) */
-#lab03-reflection {
-  border-left: 4px solid #264653;
-  padding-left: 0.75rem;
-}
+</body>
+</html>
+
 
 
 
