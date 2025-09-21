@@ -1,7 +1,7 @@
 /* style.css - basic styling for lab03 */
 body {
   background-color: #FFA500;
-  color: #222;
+  color: orange;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 1rem;
@@ -48,4 +48,5 @@ a:hover {
   border-left: 4px solid #264653;
   padding-left: 0.75rem;
 }
+
 
