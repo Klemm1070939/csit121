@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: rgba(255,255,255,0.9);
+  padding: 15px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: blue;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
