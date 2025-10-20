@@ -1,0 +1,89 @@
+body 
+
+{
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Two columns for large screens */
+  gap: 20px;
+  grid-template-rows: auto 1fr; /* Auto-adjust header height */
+  grid-template-areas: 
+    "header header"
+    "sidebar reflections";
+}
+
+/* Header styling (full width on top) */
+header {
+  grid-area: header;
+  background-color: orange;
+  color: black;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+/* Sidebar (left part) */
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Right column (Reflections) */
+.reflections {
+  grid-area: reflections;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+  body {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    grid-template-areas: 
+      "header"
+      "sidebar"
+      "reflections";
+  }
+header {
+  background: orange;
+  color: black;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+/* paragraph styles */
+p {
+  margin: 0 0 1rem 0;
+}
+
+/* link styling */
+a {
+  color: #e76f51;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* class selector required */
+.post {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+  margin-bottom: 1rem;
+}
+
+/* id selector required (an example) */
+#lab03-reflection {
+  border-left: 4px solid #264653;
+  padding-left: 0.75rem;
+
+  
+}
