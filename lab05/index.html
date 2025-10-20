@@ -1,58 +1,62 @@
+<!DOCTYPE html>
 <html lang="en">
-  <nav>
-  <ul>
-    <li><a href="#lab02">Lab 02 Reflection</a></li>
-    <li><a href="#lab03">Lab 03 Reflection</a></li>
-    <li><a href="#lab05">Lab 05 Reflection</a></li>
-  </ul>
-</nav>
-
-
-<article id="lab02">
-  <h2>Lab 02 Reflection</h2>
-  <p>Doing Lab 2 actually made building a simple webpage make sense I put the header, main, article, and footer together and it started to look like a real page. The validator flagged a stray and fixing that taught me to read the errors instead of guessing. I also realized that planning the layout ahead of time makes writing the code much easier. I used my class notes and the W3C Validator, and I’m curious if there’s a faster way to check markup before uploading.</p>
-</article>
-
-
-<article id="lab03">
-  <h2>Lab 03 Reflection</h2>
-  <p>For Lab 03 I added CSS to change colors, spacing, and font styles. I fixed a couple of validator issues and learned how to link a stylesheet.</p>
-</article>
-
-
-<article id="lab05">
-  <h2>Lab 05 Reflection</h2>
-  <p>In this lab, I learned how important it is to design websites that adapt to different screen sizes. Using media queries helps create a smooth user experience on any device. It is best to use flexible layouts and readable fonts for mobile. Testing on multiple screens ensures accessibility for all users.</p>
-</article>
-
-
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Lab 03 — Styled Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 05 Responsive Blog</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
     <h1>My Lab 05 Page</h1>
-    <h2>CSIT121 — Styling with CSS</h2>
+    <h2>CSIT121 — Layout Lab</h2>
   </header>
 
+  <main>
+    <!-- Sidebar section -->
+    <section class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="#lab02">Lab 02 Reflection</a></li>
+          <li><a href="#lab03">Lab 03 Reflection</a></li>
+          <li><a href="#lab05">Lab 05 Reflection</a></li>
+        </ul>
+      </nav>
 
-    <section>
-      <h3>Lists and a link</h3>
-      <ul>
-        <li>Thing I learned: I learned how to use CSS Grid and media queries to create responsive web layouts that adjust automatically between mobile and desktop screen sizes.</li>
+      <section class="quick-links">
+        <h3>Quick lists and a link</h3>
+        <ul>
+          <li>Thing I learned: I learned how to use CSS Grid and media queries to create responsive web layouts that adjust automatically between mobile and desktop screen sizes.</li>
         <li>Another thing: I learned how to use internal link anchors to let users quickly navigate to specific sections of a webpage</li>
       </ul>
+        </ul>
+    
+        <p>Useful resource: <a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></p>
+      </section>
+    </section>
 
-      <p>Useful resource: <a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></p>
+    <!-- Reflections section -->
+    <section class="reflections">
+      <article id="lab02" class="post">
+        <h2>Lab 02 Reflection</h2>
+        <p>Doing Lab 2 actually made building a simple webpage make sense. I put the header, main, article, and footer together and it started to look like a real page. The validator flagged a stray tag and fixing that taught me to read the errors instead of guessing.</p>
+      </article>
+
+      <article id="lab03" class="post">
+        <h2>Lab 03 Reflection</h2>
+        <p>For Lab 03 I added CSS to change colors, spacing, and font styles. I fixed a couple of validator issues and learned how to link a stylesheet.</p>
+      </article>
+
+      <article id="lab05" class="post">
+        <h2>Lab 05 Reflection</h2>
+        <p>In this lab, I learned how important it is to design websites that adapt to different screen sizes. Using media queries helps create a smooth user experience on any device.</p>
+      </article>
     </section>
   </main>
 
-
-  <footer>
-    <p>&copy; 2025 Aidan Klemm</p>
+   <footer>
+    <p>&copy; 2025 Aidan Klemm. All rights reserved.</p>
   </footer>
 </body>
 </html>
