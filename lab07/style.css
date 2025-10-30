@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: white;
   color: white;
   font-family: Arial;
   text-align: center;
@@ -41,3 +41,4 @@ th, td {
 img {
   width: 80px;
 }
+
