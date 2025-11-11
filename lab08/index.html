@@ -2,84 +2,82 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Lab 08 - Side Navigation</title>
+  <title>Lab 08 - Simple Side Navigation</title>
   <link rel="stylesheet" href="css/styles.css">
   <style>
-    /* Side Navigation Menu (from W3Schools) */
+    /* Simple Side Navigation */
     .sidenav {
+      width: 200px;
       height: 100%;
-      width: 0;
+      background-color: #333;
       position: fixed;
-      z-index: 1;
+      left: -200px;
       top: 0;
-      left: 0;
-      background-color: #111;
-      overflow-x: hidden;
-      transition: 0.5s;
-      padding-top: 60px;
-    }
-
-    .sidenav a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #818181;
-      display: block;
+      padding-top: 20px;
       transition: 0.3s;
     }
 
+    .sidenav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+    }
+
     .sidenav a:hover {
-      color: #f1f1f1;
+      background-color: #575757;
     }
 
-    .sidenav .closebtn {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 50px;
-    }
-
-    #main {
-      transition: margin-left .5s;
-      padding: 16px;
-    }
-
-    span {
-      font-size: 30px;
+    .menu-btn {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      border: none;
       cursor: pointer;
+    }
+
+    .close-btn {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+    }
+
+    .content {
+      margin-left: 20px;
+      padding: 20px;
     }
   </style>
 </head>
 <body>
-<div class="container">
+  <div>
+    <button class="menu-btn" onclick="openNav()">☰ Menu</button>
+  </div>
 
   <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <button class="close-btn" onclick="closeNav()">✖ Close</button>
     <a href="index.html">Home</a>
     <a href="jpg.html">JPG</a>
     <a href="png.html">PNG</a>
     <a href="gif.html">GIF</a>
   </div>
 
-  <div id="main">
-    <span onclick="openNav()">&#9776; Open Menu</span>
-    <h1>Lab 08: Interactive Side Navigation</h1>
-    <p>This website shows examples of JPG, PNG, and GIF images. Click the menu icon to open the side navigation.</p>
+  <div class="content">
+    <h1>Lab 08: Simple Navigation</h1>
+    <p>This website shows examples of JPG, PNG, and GIF images. Use the menu button to open the navigation.</p>
   </div>
-</div>
 
-<script>
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-  }
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.left = "0";
+    }
 
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-  }
-</script>
-
+    function closeNav() {
+      document.getElementById("mySidenav").style.left = "-200px";
+    }
+  </script>
 </body>
 </html>
