@@ -1,1 +1,57 @@
+/* Basic body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Side menu styling */
+#menu {
+  width: 180px;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: -180px; /* Hidden by default */
+  height: 100%;
+  padding-top: 20px;
+  transition: left 0.3s; /* Smooth slide effect */
+}
+
+/* Menu links */
+#menu a {
+  display: block;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#menu a:hover {
+  background-color: #555;
+}
+
+/* Close button inside menu */
+#menu button {
+  margin: 10px;
+  padding: 8px 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Open menu button */
+button {
+  margin: 10px;
+  padding: 8px 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Page content */
+.content {
+  padding: 20px;
+}
 
