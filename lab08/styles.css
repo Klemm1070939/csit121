@@ -1,3 +1,5 @@
+/* styles.css */
+
 /* Basic body styling */
 body {
   font-family: Arial, sans-serif;
@@ -16,6 +18,7 @@ body {
   height: 100%;
   padding-top: 20px;
   transition: left 0.3s; /* Smooth slide effect */
+  z-index: 1000; /* Make sure menu is on top */
 }
 
 /* Menu links */
@@ -41,7 +44,7 @@ body {
 }
 
 /* Open menu button */
-button {
+.menu-btn {
   margin: 10px;
   padding: 8px 12px;
   background-color: #333;
