@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact & Reflection</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 style="margin:0;color:#fff">Contact & Reflection</h1>
+      <nav style="margin-top:8px" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container site-main">
+    <section class="card" aria-labelledby="contactform">
+      <h2 id="contactform">Contact</h2>
+      <p class="small">This is a sample contact form; it does not submit anywhere (example only).</p>
+      <form>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit" style="background: #b71c1c; color:#fff; margin-top:8px;">Send</button>
+      </form>
+    </section>
+
+    <aside class="card" aria-labelledby="lessons">
+      <h2 id="lessons">Lessons Learned</h2>
+
+      <p>Completing this portfolio helped me put together all the small projects from the semester into a single site. I learned how to structure pages with header, main, aside, and footer sections, and how to keep the layout consistent across pages. Testing on both Chrome and Firefox showed small differences in spacing that I fixed with simple CSS rules and the included media query.</p>
+
+      <p>Overall, the course taught me the basics of building web pages — writing semantic HTML, styling with CSS, and using small bits of JavaScript where needed. I learned that validating files and testing on multiple devices helps catch small issues that would otherwise become problems after publishing.</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 Aidan Klemm</div>
+  </footer>
+</body>
+</html>
